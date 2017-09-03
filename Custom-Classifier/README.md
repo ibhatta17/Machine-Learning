@@ -7,7 +7,8 @@ The goal of this project is to build a classifier froam a scratch instead of usi
 In here, SVM classifier is developed using linear and RBF kernel.
 
 For a linear classifiier,
-* y_i = w^TX_i + b *
+
+![](http://latex.codecogs.com/gif.latex?%5Cbg_white%20y_i%20%3D%20w%5ETX_i%20&plus;%20b%20%5C%5C%20where%20%5C%20%5C%20w%20%3D%20%5Csum_i%20%5Calpha_iX_i%2C%20%5C%20%5C%20%5C%20%5C%20b%20%3D%20%5Csum%20%5Calpha%20%5C%5C%20X_i%20%5C%20is%20%5C%20trainin%20feature%20%5C%5C%20y_i%20%5C%20is%20%5C%20training%20%5C%20label%20%5C%5C%20%5C%5C%20y_i%20%3D%20%5Csum_i%20%5Calpha_iX_i%5ETX_j%20%5C%20&plus;%20%5C%20%5Csum%20%5Calpha%20%5C%5C%20y%20%3D%20%5Calpha%20X%5ETX%20%5C%20&plus;%20%5C%20%5Csum%20%5Calpha%20%5C%5C%20y%20%3D%20%5Calpha%20K%20%5C%20&plus;%20%5C%20%5Calpha%20%5Csum%201%20%5C%5C%20y%20%3D%20%5Calpha%20%28K%20&plus;%201%29%20%5C%5C%20K%3A%20%5C%20Kernel%20%5C%20Matrix%20%3D%20X_%7Btrain%7D%5ETX_%7Btrain%7D%20%5C%20for%20%5C%20linear%20%5C%20classifier%20%5C%5C%20For%20%5C%20RBF%20%5C%20kernel%2C%20%5C%5C%20K%20%3D%20exp%5Cleft%28%20%5Cfrac%7B%7C%7CX_%7Btrain%7D%20-%20X_%7Btrain%7D%7C%7C%5E2%7D%7B2%5Csigma%5E2%7D%20%5Cright%20%29%20%5C%5C%20%5C%5C%20Now%2C%20%5C%5C%20%5Calpha%20%3D%20%5Cleft%28K%20&plus;%201%20%5Cright%20%29%5E%7B-1%7Dy%20%3D%20%5Cwidetilde%7BK%7D%5E%7B-1%7Dy%20%5C%5C)
 
 
 ### K-Fold Cross Validation
