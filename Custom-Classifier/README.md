@@ -5,3 +5,6 @@ The goal of this project is to build a classifier froam a scratch instead of usi
 ![Fibonacci Data](/img/Fibonacci.png)
 
 In here, SVM classifier is developed using linear and RBF kernel.
+
+For a linear classifiier,
+$ y_i = w^TX_i + b$
