@@ -17,6 +17,7 @@ Since, the expression above involves inverse calculation. So if the eigenvalues 
 ![](http://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Calpha%20%3D%20%5Cleft%28%5Cwidetilde%7BK%7D%20&plus;%20%5Cgamma%20I%20%5Cright%20%29%5E%7B-1%7Dy%20%5C%5C%20where%2C%20%5C%5C%20%5Cgamma%3A%20small%20%5C%20positive%20%5C%20integer%20%5C%5C%20I%3A%20Identity%20%5C%20matrix)
 
 Now, let's predict the output;
+
 ![](http://latex.codecogs.com/gif.latex?%5Cbg_white%20y_%7Btest%7D%20%3D%20%5Calpha%20%5Cleft%28K_%7Btest%7D%20&plus;%201%20%5Cright%20%29)
 
 ### K-Fold Cross Validation
