@@ -53,8 +53,8 @@ input_dim = 11 # number of nodes in th i/p layer( # of independent variable)
 
 # Adding additional hidden layer
 classifier.add(Dense(output_dim = 8, init = 'uniform', activation = 'relu')) 
-# input_dim is required only for first hidden layer as the NN model does not know how many nodes are at the input but after first hidden layet, 
-# the model knows how many input are there in the following hidden layers
+# input_dim is required only for first hidden layer as the NN model does not know how many nodes are at the input but after 
+# first hidden layer, the model knows how many input are there in the following hidden layers
 
 # Adding additional hidden layer
 classifier.add(Dense(output_dim = 4, init = 'uniform', activation = 'relu'))
