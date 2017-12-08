@@ -44,14 +44,17 @@ classifier = Sequential()
 # we will have 11 input nodes(for 11 independent variables)
 # The best activation function could be rectifier function for the hidden layer and sigmoid function for the output layer
 # We will also be able to find the rank of probability that customer could leave the bank
-classifier.add(Dense(output_dim = 8,# number of nodes in the hidden layer being added. Usual practice is to take an average of number of layers in i/p layer and o/p layers. Or performance tuning by K-fold cross validation 
+classifier.add(Dense(output_dim = 8,# number of nodes in the hidden layer being added. Usual practice is to take an 
+						# average of number of layers in i/p layer and o/p layers. Or performance tuning by K-fold cross validation 
 init = 'uniform' , # initialize the weights to small number close to 0
 activation = 'relu', # rectifier activation function for hidden layer
 input_dim = 11 # number of nodes in th i/p layer( # of independent variable)
 )) # all the NN parameters are defined here
 
 # Adding additional hidden layer
-classifier.add(Dense(output_dim = 8, init = 'uniform', activation = 'relu')) # input_dim is required only for first hidden layer as the NN model does not know how many nodes are at the input but after first hidden layet, the model knows how many input are there in the following hidden layers
+classifier.add(Dense(output_dim = 8, init = 'uniform', activation = 'relu')) 
+# input_dim is required only for first hidden layer as the NN model does not know how many nodes are at the input but after first hidden layet, 
+# the model knows how many input are there in the following hidden layers
 
 # Adding additional hidden layer
 classifier.add(Dense(output_dim = 4, init = 'uniform', activation = 'relu'))
@@ -83,7 +86,8 @@ nb_epoch = 100 # defines number of iterations
 #Predicting the Test set results
 y_pred = classifier.predict(X_test)
 
-# since the y_pred here is the probabilities instead of binary value, we need to convert these probabilities into a binary value. For this weed to set a threshold to distinguish between 1 and 0.
+# since the y_pred here is the probabilities instead of binary value, we need to convert these probabilities into a binary value. 
+# For this weed to set a threshold to distinguish between 1 and 0.
 # for sensitive information we need higher threshold
 # let's choose 50% as the threshold here
 y_pred = (y_pred > 0.5) # this gives true/false
