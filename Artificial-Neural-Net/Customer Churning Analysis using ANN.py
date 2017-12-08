@@ -45,7 +45,7 @@ classifier = Sequential()
 # The best activation function could be rectifier function for the hidden layer and sigmoid function for the output layer
 # We will also be able to find the rank of probability that customer could leave the bank
 classifier.add(Dense(output_dim = 8,# number of nodes in the hidden layer being added. Usual practice is to take an 
-						# average of number of layers in i/p layer and o/p layers. Or performance tuning by K-fold cross validation 
+# average of number of layers in i/p layer and o/p layers. Or performance tuning by K-fold cross validation 
 init = 'uniform' , # initialize the weights to small number close to 0
 activation = 'relu', # rectifier activation function for hidden layer
 input_dim = 11 # number of nodes in th i/p layer( # of independent variable)
